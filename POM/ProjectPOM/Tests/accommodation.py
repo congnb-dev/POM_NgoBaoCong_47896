@@ -40,6 +40,9 @@ class LoginTest(unittest.TestCase):
         homepage = HomePage(driver)
         homepage.click_info_class()
         homepage.click_accommodation()
+        print("----------------------------------")
+        print("Đã vào trang Thông tin ngoại trú!")
+        print("----------------------------------")
         homepage.click_add()
 
         acc = AccPage(driver)
@@ -55,15 +58,19 @@ class LoginTest(unittest.TestCase):
         selectDict.select_by_value('25')
         acc.enter_leader_name("Nguyễn Văn Nhật")
         acc.enter_leader_tel("0905987654")
+        driver.save_screenshot("acc_shot_1.png")
         acc.click_acc_save()
+        print("----------------------------------")
+        print("Đã lưu Thông tin ngoại trú!")
+        print("----------------------------------")
         acc.click_acc_delete()
         acc.click_acc_confirm()
         print("----------------------------------")
-        print("Đã vào trang Thông tin ngoại trú!")
+        print("Đã xóa Thông tin ngoại trú!")
         print("----------------------------------")
 
 
-        time.sleep(10)
+        time.sleep(2)
 
     @classmethod
     def tearDownClass(cls):
