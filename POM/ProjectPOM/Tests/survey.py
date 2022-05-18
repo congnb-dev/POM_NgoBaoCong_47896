@@ -32,6 +32,7 @@ class LoginTest(unittest.TestCase):
         login.enter_username("47896")
         login.enter_password("123456")
         login.click_login()
+        driver.save_screenshot("E:/Software_Test/POM_NgoBaoCong_47896/POM/ProjectPOM/reports/login_done_2.png")
         print("----------------------------------")
         print("Đăng nhập thành công!")
         print("----------------------------------")
@@ -64,7 +65,7 @@ class LoginTest(unittest.TestCase):
         librarypage.click_library_13()
         librarypage.click_library_14()
         librarypage.click_library_15()
-        driver.save_screenshot("survey_shot_1.png")
+        driver.save_screenshot("E:/Software_Test/POM_NgoBaoCong_47896/POM/ProjectPOM/reports/survey_shot_1.png")
         librarypage.click_library_16()
         librarypage.click_library_17()
         librarypage.click_library_19()
@@ -88,7 +89,7 @@ class LoginTest(unittest.TestCase):
         librarypage.enter_cmt_1("Thư viện rất thoáng mát và có nhạc nhẹ")
         librarypage.enter_cmt_2("Chưa có")
         librarypage.enter_cmt_3("Chưa có")
-        driver.save_screenshot("survey_shot_2.png")
+        driver.save_screenshot("E:/Software_Test/POM_NgoBaoCong_47896/POM/ProjectPOM/reports/survey_shot_2.png")
         # librarypage.click_survey_save()
 
         print("----------------------------------")
@@ -108,4 +109,4 @@ class LoginTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-    # unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='E:/Software_Test/POM_NgoBaoCong_47896/POM/ProjectPOM/reports'))
+

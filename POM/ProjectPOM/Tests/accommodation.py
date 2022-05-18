@@ -36,6 +36,7 @@ class LoginTest(unittest.TestCase):
         print("----------------------------------")
         print("Đăng nhập thành công!")
         print("----------------------------------")
+        driver.save_screenshot("E:/Software_Test/POM_NgoBaoCong_47896/POM/ProjectPOM/reports/login_done.png")
 
         homepage = HomePage(driver)
         homepage.click_info_class()
@@ -58,7 +59,7 @@ class LoginTest(unittest.TestCase):
         selectDict.select_by_value('25')
         acc.enter_leader_name("Nguyễn Văn Nhật")
         acc.enter_leader_tel("0905987654")
-        driver.save_screenshot("acc_shot_1.png")
+        driver.save_screenshot("E:/Software_Test/POM_NgoBaoCong_47896/POM/ProjectPOM/reports/acc_shot_done.png")
         acc.click_acc_save()
         print("----------------------------------")
         print("Đã lưu Thông tin ngoại trú!")
